@@ -21,7 +21,7 @@ public class WelcomePage extends PageBase {
 	
 	public WelcomePage(WebDriver driver) 
 	{
-		super(driver);	//initializing the constructor of the super class with the driver
+		super(driver);	//initializing the constructor of the super class (PageBase) with the driver
 	}
 
 	public void offeneLoginMaske() {

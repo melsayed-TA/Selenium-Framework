@@ -3,7 +3,8 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-//Note: All page classes will inherit from this PageBase class
+//Note: All page classes will inherit from this PageBase class. 
+//This class contains the web driver, so it's the "base" for all page classes
 
 public class PageBase {
 
