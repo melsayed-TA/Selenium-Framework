@@ -39,7 +39,7 @@ public class ZulassungslandPage extends PageBase{
 			polenButton.click();
 		}
 		
-		return this;
+		return this; //returning the same object! (For using fluent design)
 	}
 	
 	public KennzeichenPage klickeWeiterUndNavigiereZurKennzeichen() {
