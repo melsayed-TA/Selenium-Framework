@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 //Note: All page classes will inherit from this PageBase class. 
-//This class contains the web driver, so it's the "base" for all page classes
+//This class contains the web driver, so it's the "base" for all page classes, in other words after all the pages classes inherit from this class
+//the web driver will be also inherited and it will be used to do locate and perform actions on the web elements of these pages.
 
 public class PageBase {
 
@@ -14,18 +15,5 @@ public class PageBase {
 	public PageBase (WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}
-	
-	//Generic function for clicking on buttons
-	/*public static void clickButton(WebElement button) {
-		button.click();
-	}*/
-	
-	//Generic function for setting text in a text field
-	/*public static void setText(WebElement textfieldElement, String text) {
-		textfieldElement.sendKeys(text);
-	}*/
-	
-	//These functions (methods) can be used in all the pages that have inherited from the PageBase!
-	
+	}	
 }
